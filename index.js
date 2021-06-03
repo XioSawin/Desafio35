@@ -90,8 +90,8 @@ const enviarGmail = (asunto, mensaje, adjunto, to) => {
 // ------- 
 // twilio
 
-const accountSid = 'AC5a54161b248c473a42eca18650a4cd96';
-const authToken = '947f54ebff730f9e0f38f8d7a14c1fb3';
+const accountSid = 'AAAAAAAAAAAAAAAAA';
+const authToken = '999999999999999999';
 
 const twilio = require('twilio');
 
@@ -101,7 +101,7 @@ const enviarSMS = (mensaje) => {
     let rta = client.messages.create({
             body: mensaje, 
             from: '+12566009360',
-            to: '+541165902854'
+            to: '+54111234567'
     })
     return rta;   
 }
